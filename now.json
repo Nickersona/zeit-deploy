@@ -1,1 +1,9 @@
-{}
+{
+  "version": 2,
+  "env": {
+    "CONTENTFUL_ACCESSTOKEN": "@contentful-access-token",
+    "CONTENTFUL_ENVIRONMENT": "@contentful-environment",
+    "CONTENTFUL_SPACE_ID": "@contentful-space-id"
+  },
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+}
