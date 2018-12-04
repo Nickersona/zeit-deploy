@@ -12,6 +12,7 @@ export default class Page extends React.Component {
       <div>
         <h1>{this.props.fields.title}</h1>
         <p>{this.props.fields.body}</p>
+        <p>This is a test</p>
       </div>
     )
   }
