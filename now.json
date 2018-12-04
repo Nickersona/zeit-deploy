@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "zeit-deploy-staging",
+  "name": "zeit-deploy",
   "build": {
     "env": {
       "CONTENTFUL_ACCESSTOKEN": "@contentful-access-token",
@@ -8,5 +8,11 @@
       "CONTENTFUL_SPACE_ID": "@contentful-space-id"
     }
   },
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "builds": [
+    { "src": "package.json", "use": "@now/next" },
+    { "src": "lambdas/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/utils/(.*)", "dest": "/lambdas/$1" }
+  ]
 }

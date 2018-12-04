@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next src",
     "build": "next build src",
-    "start": "next start",
+    "start": "next start src",
     "now-build": "next build src && next export src -o dist"
   },
   "dependencies": {
