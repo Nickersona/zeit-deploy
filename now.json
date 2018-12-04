@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "name": "zeit-deploy-staging",
   "build": {
     "env": {
       "CONTENTFUL_ACCESSTOKEN": "@contentful-access-token",
